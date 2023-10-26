@@ -1,0 +1,549 @@
+
+
+/* navbar ======================================================================================================================================== */
+
+.navbar {
+    background-color: rgb(100, 0, 0);
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 10%;
+    border-bottom: white 1px solid;
+    z-index: 10000;
+}
+.page-active{
+    border-top: rgb(235, 216, 0) 5px solid;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.search-container {
+    float: left;
+}
+
+.search-container input[type="image"] {
+    height: 24px;
+    float: left;
+    padding: 14px;
+}
+
+.search-container input[type="text"] {
+    font-size: 17px;
+    float: left;
+    padding: 14px;
+}
+
+
+.img-panier {
+    color: white;
+    height: 20px;
+}
+.img-panier-a{
+   margin-left: 30%;
+}
+
+
+
+
+/* Styles pour le menu hamburger (masqué par défaut) */
+.menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+}
+
+
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu input[type="checkbox"] {
+    display: none;
+}
+
+/* Masquez la liste par défaut */
+.menu-items {
+    display: none;
+}
+
+/* Affichez la liste lorsque la case à cocher est cochée */
+input[type="checkbox"]:checked ~ .menu-items {
+    display: flex;
+}
+
+
+/* FOOTER ============================================================*/ 
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    position: relative;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+
+
+
+
+/* balise general ======================================================================================================================================== */
+
+
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* classes ======================================================================================================================================== */
+
+
+
+.image-de-fond{
+    position: fixed;
+    z-index: -9;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.entete{
+    background-color: rgba(0,0,0, 0.8);
+    border-bottom: 1px solid white;
+    padding: 3% 10%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+}
+.entete h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1%;
+    border-bottom: rgb(235, 216, 0) 1px solid;
+    display: inline-block;
+}
+.entete p{
+    font-size: 20px;
+    margin: 5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: rgb(235, 216, 0) 3px solid;
+    border-right: rgb(235, 216, 0) 3px solid;
+    border-radius: 2px;
+}
+
+
+
+/* TAB DES PRODUITS ======================================================================================================================================== */
+
+.produits{
+    position: relative;
+    border-left: white 1px solid;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 10px;
+    padding: 60px;
+    left: 35%;
+    top: -35em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.image-produit{
+    width: 300px;
+    height: 450px;
+    transition: transform 0.3s;
+    border: 3px white solid;
+    border-radius: 5px;
+}
+.image-produit:hover {
+    transform: scale(1.1);
+}
+.description{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.description p{
+    margin-top: 8%;
+}
+
+.ajouter{
+    background-color: #333;
+    border-radius: 15px;
+    padding: 7px;
+    margin-top: 3px;
+    display: inline-block;
+}
+.ajouter:hover{
+    background-color: black;
+}
+.ajouter a{
+    color: white;
+}
+.ajouter a:hover{
+    color: rgb(235, 216, 0);
+}
+
+
+
+.charger-plus{
+    text-align: center;
+    margin-left: 41.5%;
+    border: white 3px solid;
+    border-radius: 5px;
+    background-color: #333;
+    padding: 15px;
+    width: auto;
+    color: white;
+}
+.charger-plus:hover{
+    background-color: #000000;
+}
+.charger-plus p:hover{
+    color: rgb(235, 216, 0);
+}
+
+
+
+
+
+
+
+
+/* FILTRE ======================================================================================================================================== */
+
+
+.filtre{
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.9);
+    position: relative;
+    width: 20%;
+    left: 12%;
+    top: 13em;
+    font-size: 20px;
+    padding: 15px;
+}
+.filtre h2{
+    margin: 10px 5px 30px 5px;
+    text-align: center;
+    border-bottom: rgb(235, 216, 0) 1px solid;
+    display: inline-block;
+}
+.filtre h3{
+    margin: 10px 5px 30px 5px;
+    border-bottom: rgb(100, 0, 0) 2px solid;
+    display: inline-block;
+
+}
+
+/* Styles pour personnaliser les cases à cocher */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 30px; /* Espace pour la case à cocher personnalisée */
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+/* Styles pour personnaliser la case à cocher réelle (input) */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Styles pour la case à cocher personnalisée */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee; /* Couleur de fond de la case à cocher */
+    border: 1px solid #333; /* Bordure de la case à cocher */
+    border-radius: 3px; /* Coins arrondis */
+}
+
+/* Styles pour la coche (affichée lorsque la case est cochée) */
+.checkbox-container input:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Styles pour la case à cocher lorsqu'elle est survolée */
+.checkbox-container:hover .checkmark {
+    background-color: #acacac; /* Couleur de fond au survol */
+}
+
+
+
+
+
+
+
+/* TRIE ======================================================================================================================================== */
+
+.trie{
+    position: relative;
+    left: 75%;
+    top: 11em;
+    font-size: 20px;
+    display: inline-block;
+    background-color: rgba(0,0,0, 0.9);
+    border-radius: 5px;
+    width: 270px;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+}
+.trie:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white; /* Couleur de la flèche */
+}
+.trie option{
+    color: white;
+    background-color: black;
+}
+select {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 69%; 
+    padding: 10px;
+    margin-left: 1%;
+    border: solid gray 1px;
+    overflow: hidden;
+    font-size: 16px;
+    color: white;
+}
+select:hover{
+    background-color: rgb(100, 0, 0);
+}
+
+
+
+
+
+
+
+
+/* SUR TELEPHONE */
+
+@media (max-width: 768px) {
+
+    /* LA BARRE DE NAV ===========================================*/
+    .navbar{
+        display: none;
+    }
+
+    .menu {
+        display: block; 
+    }
+    
+    /* =========================================================*/
+
+
+    .image-de-fond{
+        display: none;
+    }
+
+
+
+
+    .entete p{
+        font-size: 16px;
+        border: none;
+    }
+    .entete h3{
+        font-size: 30px;
+        border: none;
+    }
+
+
+    .trie{
+        left: 0;
+        top: 1em;
+    }
+
+
+
+    .filtre{
+        padding: 15px;
+        display: flex;
+        width: auto;
+        left: 0;
+        top: 2em;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .filtre h2, .filtre h3{
+        display: none;
+    }
+
+    /* Styles pour personnaliser les cases à cocher */
+    .checkbox-container {
+    /* Espace pour la case à cocher personnalisée */
+        margin: 0 20px 5px 20px;
+        font-size: 16px;
+    }
+
+
+
+    .produits{
+        top: 5em;
+        left: 0;
+        padding: 20px 0 10px 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .description{
+        padding: 0;
+        width: 80%;
+    }
+    .description p{
+        margin-top: 5px;
+        padding-bottom:  5px;
+    }
+    .image-produit:hover {
+        transform: scale(1);
+    }
+
+    .charger-plus{
+        margin: 0;
+    }
+
+
+}
+
