@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="../styles/shop.css">
+    <script src="../js/shop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- image de fond-->
+
+    <img src="../img/shopbackground.jpg" alt="image de fond" class="image-de-fond">
+
+
+    <!-- BARRE DE NAVIGATION -->
+
+    <div class="navbar">
+        <a href="#">L'Atelier Magique</a>
+        <a href="#" class="page-active">Boutique</a>
+        <a href="#">Histoire</a>
+        <a href="#">À propos</a>
+        <div class="search-container">
+            <input type="image" src="../img/loupe.png">
+            <input type="text" placeholder="Rechercher...">
+
+        </div>
+        <a href="#" class="img-panier-a"><img src="../img/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
+        <a href="#">Se connecter</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-items">
+            <li><a href="#">L'Atelier Magique</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">À propos</a></li>
+        </ul>
+    </div>
+
+    <script src="../js/shop.js"></script>
+
+    
+
+
+    <!-- LE CONTENUE -->
+
+
+
+    <div class="entete">
+        <h3>VOS PRODUITS MAGIQUES</h3>
+        <p>Explorez une boutique enchantée où la magie prend vie. Nos produits magiques authentiques sont conçus pour émerveiller les sorciers et les sorcières avertis. Des potions mystérieuses aux baguettes puissantes, en passant par des animaux de compagnie extraordinaires et des balais volants exceptionnels, notre sélection vous ouvre les portes d'un monde de merveilles.
+            <br><br>De plus, profitez de notre service de livraison ultra-rapide baptisé "MagiLivrez" : tous les produits sont livrés en 30 minutes maximum, directement à votre porte, pour que vous puissiez commencer à profiter de la magie immédiatement.</p>
+    </div>
+    
+
+    
+    <div class="trie">
+        <label for="trier">Trier par</label>
+        <select id="trier" name="trier">
+            <option value="#">Popularité</option>
+            <option value="#">Prix croissant</option>
+            <option value="#">Prix décroissant</option>
+            <option value="#">Magie croissante</option>
+            <option value="#">Magie décroissante</option>
+        </select>
+    </div>
+
+    <div class="filtre">
+        <h2>Filtrer votre recherche</h2>
+        <h3>Écoles</h3>
+        <form>
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix1"> Gryffondord
+                <span class="checkmark"></span>
+            </label><br>
+            
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix2"> Serpentard
+                <span class="checkmark"></span>
+            </label><br>
+            
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix3"> Serdaigle
+                <span class="checkmark"></span>
+            </label><br>
+
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix4"> Poufsouffle
+                <span class="checkmark"></span>
+            </label><br>
+        </form>
+
+        <h3>Type de produit</h3>
+        <form>
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix1"> Vêtements
+                <span class="checkmark"></span>
+            </label><br>
+            
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix2"> Baguettes
+                <span class="checkmark"></span>
+            </label><br>
+
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix3"> Balais
+                <span class="checkmark"></span>
+            </label><br>
+            
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix4"> Potions
+                <span class="checkmark"></span>
+            </label><br>
+
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix5"> Animaux
+                <span class="checkmark"></span>
+            </label><br>
+
+            <label class="checkbox-container">
+                <input type="checkbox" name="choix2"> Ingrédients
+                <span class="checkmark"></span>
+            </label><br>
+        </form>
+    </div>
+
+    <div class="produits">
+        <div class="description">
+           <a href="#"><img src="../img/p1.webp" alt="baguette1" class="image-produit"></a>
+            <p> Échiquier des Sorciers <br>
+                50 €
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/cap_invisible.webp" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/baguette1.jpg" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/baguette2.jpg" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/baguette3.jpg" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/potion_du_centaure.png" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/potion_du_loup_garou.png" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/billetdetrain" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        <div class="description">
+            <a href="#"><img src="../img/cornedebicorne.jpg" alt="baguette1" class="image-produit"></a>
+            <p> Description de baguette 1 <br>
+                prix 1
+            </p>
+            <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
+        </div>
+        
+
+        <a href="#" class="charger-plus">
+            <p>AFFICHER PLUS</p>
+        </a>
+    </div>
+
+
+
+    <!-- FOOTER ===========================================-->
+
+    <footer>
+        <div class="footer">
+          <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        
+          <div class="row">
+            <ul>
+              <li><a href="#">Nous Contacter</a></li>
+              <li><a href="#">Nos Services</a></li>
+              <li><a href="#">Politique de Confidentialité</a></li>
+              <li><a href="#">Termes et Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        </footer>
+
+    
+    
+</body>
+</html>
