@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produit.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">L'Atelier Magique</a>
+        <a href="#" class="page-active">Boutique</a>
+        <a href="#">Histoire</a>
+        <a href="#">À propos</a>
+        <div class="search-container">
+            <input type="image" src="../img/loupe.png">
+            <input type="text" placeholder="Rechercher...">
+
+        </div>
+        <a href="#" class="img-panier-a"><img src="../img/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
+        <a href="#">Se connecter</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-items">
+            <li><a href="#">L'Atelier Magique</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">À propos</a></li>
+        </ul>
+    </div>
+
+    <img src="boutiauefond.jpg" class="image-de-fond">
+    
+    
+    <div class="box1">
+    <h1>Votre panier</h1>
+    </div>
+
+    <div class="box2">
+        <h1>Produit :</h1><br><br>
+        
+            <div id="cart">
+                <!-- Les articles seront ajoutés ici par JavaScript -->
+            </div>
+        
+    </div>
+    
+    <div class="box3">
+        <h1>Choississez un moi de livraison :</h1>
+        <select  required>
+           
+            <option value="Hiboux">Hiboux</option>
+            <option value="Hippogriffe">Hippogriffe</option>
+        </select>
+    </div>
+
+    <div class="box2">
+        <h1>Choississez un lieu de livraison :</h1>
+        <select>
+            <option>Point relai le plus proche</option>
+            <option>Chez vous</option>
+        </select>
+    </div>
+    <div class="box4">
+    <h1>Total: $<span id="total">0.00</span></h1>
+    <button id="checkout">Payer</button>
+</div>
+<script src="script.js"></script>
+    <footer>
+        <div class="footer">
+          <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        
+          <div class="row">
+            <ul>
+              <li><a href="#">Nous Contacter</a></li>
+              <li><a href="#">Nos Services</a></li>
+              <li><a href="#">Politique de Confidentialité</a></li>
+              <li><a href="#">Termes et Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        </footer>
+        
+</body>
+</html>
