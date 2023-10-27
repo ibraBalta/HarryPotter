@@ -5,10 +5,10 @@ Site WEB : https://ibrabalta.github.io/HarryPotter/
 
 ## Membres et répartition du travail :
 
-Page Accueil : RICHARD Florian
-Page Boutique : BALTA Ibrahim
-Page Présentation d'un produit : VUILLIN Thomas
-Page Panier : VOELIN Mattéo
+Page Accueil : RICHARD Florian <br>
+Page Boutique : BALTA Ibrahim <br>
+Page Présentation d'un produit : VUILLIN Thomas <br>
+Page Panier : VOELIN Mattéo <br>
 
 ## Indications :
 
