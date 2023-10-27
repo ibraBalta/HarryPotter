@@ -279,6 +279,9 @@ h1{
     font-size: 25px;
     color: lavender;
 }
+        p{
+        color:lavender;
+    }
 
 #cart {
     width: 80%;
@@ -329,9 +332,7 @@ h1{
     padding: 14px;
 }
 @media (max-width:720px){
-    p{
-        color:lavender;
-    }
+
     
     .box1 {
     background: rgba(0,0,0,0.6);
@@ -375,10 +376,13 @@ h1{
         font-size: 15px;
     }
     
-h1{
-    font-size: 25px;
-    color: lavender;
-}
+    h1{
+        font-size: 20px;
+        color: #fff;
+    }
+    p{
+        color: white;
+    }
 
 
     #cart {
