@@ -1,14 +1,19 @@
 /* navbar */
 
 .navbar {
-    background-color: #333;
+    background-color: rgb(80, 0, 0);
     display: flex;
     top: 0;
     left: 0;
     width: 100%;
     padding-left: 10%;
-    border-bottom: white 1px solid;
     z-index: 10000;
+    font-family: 'Lato', sans-serif;;
+    align-items: center;
+    justify-items: center;
+}
+.page-active{
+    background-color:rgb(60, 0, 0) ;
 }
 
 .navbar a {
@@ -21,12 +26,14 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(60, 0, 0);
 }
 
-.search-container {
-    float: left;
+#searchBox {
+    border-radius: .7rem;
+    padding: 10px;
+    margin: 3px;
+    font-size: 17px;
 }
 
 .search-container input[type="image"] {
@@ -35,37 +42,30 @@
     padding: 14px;
 }
 
-.search-container input[type="text"] {
-    font-size: 17px;
-    float: left;
-    padding: 14px;
-}
-
 
 .img-panier {
-    color: white;
-    height: 20px;
+    filter: invert();
+    height: 26px;
 }
+
+#loupe {
+    filter: invert();
+}
+
+#logo-barre-nav {
+    height: 30px;
+    width: auto;
+    margin-right: 50px;
+}
+
+#seConnecter {
+    margin-right: 30px;
+}
+
 .img-panier-a{
    margin-left: 30%;
 }
 
-
-.login-button {
-    background-color: #333;
-    border: none;
-    color: white;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.login-button:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
