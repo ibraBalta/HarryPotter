@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>HP - Panier</title>
     <link rel="stylesheet" href="../styles/panier.css">
     
 </head>
 <body>
     <div class="navbar">
-        <a href="../pages/index.html">L'Atelier Magique</a>
-        <a href="../pages/shop.html">Boutique</a>
+        <a href="#">L'Atelier Magique</a>
+        <a href="#" class="page-active">Boutique</a>
         <a href="#">Histoire</a>
         <a href="#">À propos</a>
         <div class="search-container">
@@ -19,7 +20,7 @@
             <input type="text" placeholder="Rechercher...">
 
         </div>
-        <a href="#" class="img-panier-a page-active"><img src="../img/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
+        <a href="#" class="img-panier-a"><img src="../img/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
         <a href="#">Se connecter</a>
         </div>
     </div>
@@ -35,43 +36,51 @@
         </ul>
     </div>
 
-    <img src="../img/panierfond.jpg" class="image-de-fond">
-    
-    
+    <img alt="Panier fond" src="panierfond.jpg" class="image-de-fond">
+
+
     <div class="box1">
     <h1>Votre panier</h1>
-    </div>
-
-    <div class="box2">
-        <h1>Produit :</h1><br><br>
         
             <div id="cart">
                 <!-- Les articles seront ajoutés ici par JavaScript -->
             </div>
         
-    </div>
-    
-    <div class="box3">
-        <h1>Choississez un moi de livraison :</h1>
-        <select  required>
-           
-            <option value="Hiboux">Hiboux</option>
-            <option value="Hippogriffe">Hippogriffe</option>
-        </select>
-    </div>
+    <hr>
 
-    <div class="box2">
+
+    
+   
+        <h1>Choississez un moi de livraison :</h1>
+        <select >
+            <option value="Hiboux">Hibou</option>
+            <option value="Hippogriffe">Hippogriffe</option>
+            <option value="Teleportation">Téléprotation</option>
+        </select>
+    
+
+ 
         <h1>Choississez un lieu de livraison :</h1>
         <select>
             <option>Point relai le plus proche</option>
             <option>Chez vous</option>
         </select>
+        <hr>
+        <h1>Politique de retour</h1>
+        <p>Si le produit est défectueux, un mauvais article, de mauvaise qualité ou que vous n'avez pas reçu vos achats, vous serez remboursé sous 24 heures.<br></p>
     </div>
-    <div class="box4">
-    <h1>Total: $<span id="total">0.00</span></h1>
-    <button id="checkout">Payer</button>
-</div>
-<script src="script.js"></script>
+    <div class="box4">  
+        <div class="search-container1">
+            <input type="text" placeholder="Coupon de réduction">
+
+        </div>
+        
+        <h1>Total: <span id="total">0.00</span> Gallion d'or</h1>
+        <button id="checkout">Payer</button>
+    </div>
+
+<script src="panier.js"></script>
+<div class="espace"></div>
     <footer>
         <div class="footer">
           <div class="row">
