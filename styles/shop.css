@@ -248,18 +248,24 @@ a{
     text-align: center;
     font-size: 30px;
     margin-top: 1%;
-    border-bottom: rgb(235, 216, 0) 1px solid;
+    border-left: rgb(218, 185, 1) 5px solid;
+    border-right: rgb(218, 185, 1) 5px solid;
+    padding: 15px;
+    border-radius: 10px;
     display: inline-block;
 }
 .entete p{
     font-size: 20px;
     margin: 5%;
-    padding-left: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 5px;
-    border-left: rgb(235, 216, 0) 3px solid;
-    border-right: rgb(235, 216, 0) 3px solid;
+    border-left: rgb(218, 185, 1) 6px solid;
     border-radius: 2px;
+    text-align: justify;
 }
+
 
 
 
