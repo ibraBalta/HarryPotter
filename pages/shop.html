@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry Potter</title>
+    <title>L'Atelier Magique</title>
     <link rel="stylesheet" href="../styles/shop.css">
     <script src="../js/shop.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../img/favic.png">
 </head>
 <body>
 
@@ -17,35 +18,41 @@
 
     <!-- BARRE DE NAVIGATION -->
 
-      <div class="navbar">
+    <a href="../index.html"><img src="../img/produit/Hogwarts_image.png" alt="panier" id="logo-barre-nav" ></a>
 
-    <a href="#"><img src="../img/produit/Hogwarts_image.png" alt="panier" id="logo-barre-nav" ></a>
+    <!-----------------BARRE DE NAVIGATION-------------->
 
-    <a href="../pages/shop.html" class="page-active">BOUTIQUE</a>
-    <a href="#">HISTOIRE</a>
-    <a href="#">À PROPOS</a>
-    
+  <div class="navbar">
+
+    <div class="categorie-gauche-nav-bar">
+      <a href="../pages/shop.html" class="page-active">BOUTIQUE</a>
+      <a href="#">HISTOIRE</a>
+      <a href="#">À PROPOS</a>
+    </div>
+
     <div class="search-container">
         <input id="loupe" type="image" src="../img/produit/loupe.png">
         <input id="searchBox" type="text" placeholder="Rechercher...">
     </div>
 
-            <a href="#" class="img-panier-a"><img src="../img/produit/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
-            <a id="seConnecter" href="#">SE CONNECTER</a>
-        </div>
+    <a href="panier.html" class="img-panier-a"><img src="../img/produit/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
+    <a id="seConnecter" href="#">CONNEXION</a>
     </div>
+</div>
 
+<!-----------------BARRE DE NAVIGATION TELEPHONE-------------->
 
-    <div class="menu">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="menu-items">
-            <li><a href="#">L'Atelier Magique</a></li>
-            <li><a href="#">Boutique</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">À propos</a></li>
-        </ul>
-    </div>
+<div class="menu">
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <ul class="menu-items">
+      <li><a href="#">L'Atelier Magique</a></li>
+      <li><a href="#">BOUTIQUE</a></li>
+      <li><a href="#">HISTOIRE</a></li>
+      <li><a href="#">À PROPOS</a></li>
+      <li><a href="../pages/panier.html">MON CHAUDRON</a> </li>
+  </ul>
+</div>
 
     <script src="../js/shop.js"></script>
 
@@ -80,7 +87,7 @@
         <h3>Écoles</h3>
         <form>
             <label class="checkbox-container">
-                <input type="checkbox" name="choix1"> Gryffondord
+                <input type="checkbox" name="choix1"> Gryffondor
                 <span class="checkmark"></span>
             </label><br>
             
@@ -136,66 +143,57 @@
 
     <div class="produits">
         <div class="description">
-           <a href="produit.html"><img src="../img/p1.webp" alt="baguette1" class="image-produit"></a>
-            <p> Échiquier des Sorciers <br>
-                50 €
-            </p>
+           <a href="produit.html"><img src="../img/s1.png" alt="baguette1" class="image-produit"></a>
+            <p> Baguettes <br> </p>
+                <div class="jaune">15 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/cap_invisible.webp" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s2.png" alt="baguette1" class="image-produit"></a>
+            <p> Balais <br> </p>
+                <div class="jaune">50 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/baguette1.jpg" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s3.png" alt="baguette1" class="image-produit"></a>
+            <p> Potions <br> </p>
+                <div class="jaune">6 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/baguette2.jpg" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s4.png" alt="baguette1" class="image-produit"></a>
+            <p> Caps <br> </p>
+                <div class="jaune">70 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/baguette3.jpg" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s5.png" alt="baguette1" class="image-produit"></a>
+            <p> Ingrédients <br> </p>
+                <div class="jaune">5 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/potion_du_centaure.png" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s7.png" alt="baguette1" class="image-produit"></a>
+            <p> Oeufs <br> </p>
+                <div class="jaune">500 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/potion_du_loup_garou.png" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s8.png" alt="baguette1" class="image-produit"></a>
+            <p> Chapeau <br> </p>
+                <div class="jaune">40 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/billetdetrain" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s9.png" alt="baguette1" class="image-produit"></a>
+            <p> Chaudron <br> </p>
+                <div class="jaune">30 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         <div class="description">
-            <a href="#"><img src="../img/cornedebicorne.jpg" alt="baguette1" class="image-produit"></a>
-            <p> Description de baguette 1 <br>
-                prix 1
-            </p>
+            <a href="#"><img src="../img/s10.png" alt="baguette1" class="image-produit"></a>
+            <p> Boîte mystère <br> </p>
+                <div class="jaune">20 G</div>
             <div class="ajouter"><a href="#">Ajouter au chaudron</a></div>
         </div>
         
