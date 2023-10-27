@@ -235,12 +235,10 @@ p{
 h1{
     color:white;
     text-decoration:none;
+    font-size:25px;
 }
 @media (min-width:720px){
 
-    p{
-        color:lavender;
-    }
 
 .box1 {
         background: rgba(0,0,0,0.6) ;
@@ -284,13 +282,7 @@ select{
     font-size: 20px;
 }
 
-h1{
-    font-size: 25px;
-    color: lavender;
-}
-        p{
-        color:lavender;
-    }
+
 
 #cart {
     width: 80%;
