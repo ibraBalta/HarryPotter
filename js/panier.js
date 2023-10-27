@@ -1,7 +1,7 @@
 // Exemple de produits
 /*
 const products = [
-    { id: 1, name: 'Baguette', price: 10.99 },
+    { id: 1, name: 'Baguette en Sapin', price: 10.99 },
     { id: 2, name: 'Anneau', price: 19.99 },
     { id: 3, name: 'Cape', price: 5.99 }
 ];
@@ -22,7 +22,7 @@ function renderCart() {
         itemElement.className = 'cart-item';
         itemElement.innerHTML = `
             <span>${product.name} x${item.quantity}</span>
-            <span>$${(product.price * item.quantity).toFixed(2)}</span>
+            <span>${(product.price * item.quantity).toFixed(2)} Gallion d'or</span>
             <button data-id="${item.id}">Supprimer</button>
         `;
 
