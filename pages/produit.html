@@ -1,49 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HP - Produit</title>
 
     <link rel="stylesheet" type="text/css" href="../styles/produit.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <!-- BARRE DE NAVIGATION -->
 
-    <div class="navbar">
-        <a href="../pages/index.html">Accueil</a>
-        <a href="../pages/shop.html">Boutique</a>
-        <a href="#">Histoire</a>
-        <a href="#">À propos</a>
-        <div class="search-container">
-            <input type="image" src="../img/loupe.png">
-            <input type="text" placeholder="Rechercher...">
+  <a href="#"><img src="../img/produit/Hogwarts_image.png" alt="panier" id="logo-barre-nav" ></a>
 
-        </div>
-        <a href="../pages/panier.html" class="img-panier-a"><img src="../img/panier.png" alt="panier" class="img-panier" ></a>
-        <a href="#" class="login-button">Se connecter</a>
+<!-----------------BARRE DE NAVIGATION-------------->
+
+  <div class="navbar">
+
+    <div class="categorie-gauche-nav-bar">
+      <a href="../pages/shop.html" class="page-active">BOUTIQUE</a>
+      <a href="#">HISTOIRE</a>
+      <a href="#">À PROPOS</a>
     </div>
 
+    <div class="search-container">
+        <input id="loupe" type="image" src="../img/produit/loupe.png">
+        <input id="searchBox" type="text" placeholder="Rechercher...">
+    </div>
 
+    <a href="#" class="img-panier-a"><img src="../img/produit/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
+    <a id="seConnecter" href="#">CONNEXION</a>
+    </div>
+</div>
 
-    <!-- LE CONTENUE -->
-    
+<!-----------------BARRE DE NAVIGATION TELEPHONE-------------->
+
+<div class="menu">
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <ul class="menu-items">
+      <li><a href="#">L'Atelier Magique</a></li>
+      <li><a href="#">BOUTIQUE</a></li>
+      <li><a href="#">HISTOIRE</a></li>
+      <li><a href="#">À PROPOS</a></li>
+  </ul>
+</div>
+
+<!-----------------PARTIE ACHAT-------------->
+
+<div id="fondPage">
     <div id="produit">
 
-        <img id="exempleProduit" src="../img/produit/exempleProduit.jpg">
+        <div id="partieImage">
+            <img id="imageUn" class="imagePresentation" src="../img/produit/BaguetteUn.png">
+            <img id="imageDeux" class="imagePresentation" src="../img/produit/BaguetteDeux.png">
+            <img id="imageTrois" class="imagePresentation" src="../img/produit/BaguetteTrois.png">
+        </div>
 
+        <div id="partieAchat">
 
-            <h1 class="nomProduit">Nom du Produit</h1>
+            <h1 id="titreUn" class="nomProduit">Baguette en bois de Sureau</h1>
+            <h1 id="titreDeux" class="nomProduit">Baguette en bois de Sapin</h1>
+            <h1 id="titreTrois" class="nomProduit">Baguette en bois d'Orme</h1>
 
-            <h2 class="categorieProduit">Catégorie produit</h2>
+            <h2 class="categorieProduit">BAGUETTE MAGIQUE</h2>
 
-            <h3 class="prixProduit">149,99 €</h3>
+            <h3 id="prixProduit">Prix : 15 Gallions d'or</h3>
 
-            <img id="exempleChoixPremier" class="exempleChoix" src="../img/produit/exempleChoix.png">
-            <img class="exempleChoix" src="../img/produit/exempleChoix.png">
-            <img class="exempleChoix" src="../img/produit/exempleChoix.png">
+            <img id="boisNumeroUn" class="exempleChoix" src="../img/produit/boisUn.png" onclick="changementVersImageUn()">
+            <img id="boisNumeroDeux" class="exempleChoix" src="../img/produit/boisDeux.png" onclick="changementVersImageDeux()">
+            <img id="boisNumeroTrois" class="exempleChoix" src="../img/produit/boisTrois.png" onclick="changementVersImageTrois()">
+        
+            <br><br>
 
+            <input type="checkbox" class="case-a-cocher" id="caseUne">
+            <label for="maCaseACocher">Livraison Standard</label>
+
+            <br><br>
+
+            <input type="checkbox" class="case-a-cocher" id="caseDeux">
+            <label for="maCaseACocher">Livraison Express : Service de téléportation</label>
+
+            <br><br>
+
+            <button id="ajouterAuChaudron">Ajouter au Chaudron<img id="chaudron" src="../img/produit/chaudron.png"></button>
+
+            <br><br>
+            
+            <button id="ajouterAuxFavoris">Ajouter aux Favoris<img id="coeur" src="../img/produit/coeur.png"> </button>
+
+        </div>
     </div>
+</div>
+
+    <footer>
+        <div class="footer">
+          <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        
+          <div class="row">
+            <ul>
+              <li><a href="#">Nous Contacter</a></li>
+              <li><a href="#">Nos Services</a></li>
+              <li><a href="#">Politique de Confidentialité</a></li>
+              <li><a href="#">Termes et Conditions</a></li>
+            </ul>
+          </div>
+        
+        <div class="row">
+        Page réalisée par <b>VUILLIN Thomas</b> dans le cadre du Développement Web.
+        </div> 
+        </div>
+        </footer>
+
+    <script src="../js/produit.js"></script>
 
 </body>
 </html>
