@@ -251,9 +251,28 @@ button:hover::before {
 }
     
 @media (max-width:720px){
-    .footer{
-        text-align:left;
-        padding:5%;
+    .navbar {
+        padding-left: 5%;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .search-container input[type="image"] {
+        height: 20px;
+        padding: 10px;
+    }
+    .search-container input[type="text"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .menu-icon {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .button {
+        font-size: 12px;
+        padding: 0.5em 1em;
     }
     .footer .row ul li{
         display:block;
@@ -262,5 +281,92 @@ button:hover::before {
     }
     .footer .row a i{
         margin:0% 3%;
+    }
+    /* Adjust styles for smaller screens */
+    .imgHogwarts {
+        top: 30%;
+    }
+    .button {
+        top: 50%;
+    }
+}
+@media (min-width: 721px) and (max-width: 1024px) {
+    /* Adjust styles for medium screens */
+    .navbar {
+        padding-left: 7%;
+    }
+    .navbar a {
+        font-size: 15px;
+        padding: 12px;
+    }
+    .search-container input[type="image"] {
+        height: 22px;
+        padding: 12px;
+    }
+    .search-container input[type="text"] {
+        font-size: 15px;
+        padding: 12px;
+    }
+    .menu-icon {
+        font-size: 22px;
+        padding: 12px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 0.7em 1.5em;
+    }
+    .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .row a i{
+        margin:0% 3%;
+    }
+    .imgHogwarts {
+        top: 35%;
+    }
+    .button {
+        top: 55%;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Adjust styles for large screens */
+    .navbar {
+        padding-left: 10%;
+    }
+    .navbar a {
+        font-size: 16px;
+        padding: 14px;
+    }
+    .search-container input[type="image"] {
+        height: 24px;
+        padding: 14px;
+    }
+    .search-container input[type="text"] {
+        font-size: 17px;
+        padding: 14px;
+    }
+    .menu-icon {
+        font-size: 24px;
+        padding: 14px 20px;
+    }
+    .button {
+        font-size: 15px;
+        padding: 1em 2em;
+    }
+    .footer .row ul li{
+        display:inline-block;
+        margin:0px 30px;
+    }
+    .footer .row a i{
+        margin:0% 1%;
+    }
+    .imgHogwarts {
+        top: 45%;
+    }
+    .button {
+        top: 60%;
     }
 }
