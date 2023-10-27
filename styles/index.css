@@ -1,17 +1,32 @@
-/* navbar ======================================================================================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* --------------BARRE DE NAVIGATION  -------------------- */
 
 .navbar {
-    background-color: rgb(100, 0, 0);
+    background-color: rgb(80, 0, 0);
     display: flex;
     top: 0;
     left: 0;
     width: 100%;
-    padding-left: 10%;
-    border-bottom: white 1px solid;
+    padding-left: 0%;
     z-index: 10000;
+    font-family: 'Lato', sans-serif;;
+    align-items: center;
+    justify-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
 .page-active{
-    border-top: rgb(235, 216, 0) 5px solid;
+    background-color:rgb(60, 0, 0) ;
+}
+
+.categorie-gauche-nav-bar {
+    margin-left: 20%;
 }
 
 .navbar a {
@@ -24,12 +39,14 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(60, 0, 0);
 }
 
-.search-container {
-    float: left;
+#searchBox {
+    border-radius: .7rem;
+    padding: 10px;
+    margin: 3px;
+    font-size: 17px;
 }
 
 .search-container input[type="image"] {
@@ -38,22 +55,67 @@
     padding: 14px;
 }
 
-.search-container input[type="text"] {
-    font-size: 17px;
-    float: left;
-    padding: 14px;
-}
-
 
 .img-panier {
-    color: white;
-    height: 20px;
+    filter: invert();
+    height: 26px;
 }
+
+#loupe {
+    filter: invert();
+}
+
+#logo-barre-nav {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
 .img-panier-a{
-   margin-left: 30%;
+   margin-left: 25%;
 }
 
 
+/* -------------------------------- */
+
+#produit {
+    margin-top: 8%;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    
+}
+
+#partieAchat {
+    margin-left: 5%;
+    background: rgb(0, 0, 0, .7);
+    padding: 30px;
+    border-radius: 10%;
+    border: 5px solid #141414;
+}
+
+#partieImage {
+    margin-left: 20%;
+}
+
+/* PARTIE CASE A COCHER */
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(80, 0, 0);
+}
+
+label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 110%;
+    color: #e9e9e9;
+    padding-left: 7px;
+}
+
+/* ---------------------------------------------- */
 
 /* Styles pour le menu hamburger (masqué par défaut) */
 .menu {
@@ -61,84 +123,88 @@
     position: relative;
     top: 0;
     left: 0;
-    background-color: #333;
-    padding: 10px;
+    background-color: #202020;
+    padding: 15px;
 }
-
 
 
 .menu-icon {
-    font-size: 24px;
+    font-size: 35px;
     cursor: pointer;
     color: white;
-        padding: 10px 20px;
-    }
+    padding: 10px 20px;
+}
 
 .menu-items {
-list-style-type: none;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
+    list-style-type: none;
+    margin-bottom: 3px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-items li {
-margin: 10px 0;
+    margin: 10px 0;
 }
 
 .menu-items a {
-text-decoration: none;
-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
 }
 
 .menu-items label {
-display: none;
-cursor: pointer;
+    display: none;
+    cursor: pointer;
 }
 
 .menu input[type="checkbox"] {
-display: none;
+    display: none;
 }
 
 /* Masquez la liste par défaut */
 .menu-items {
-display: none;
+    display: none;
 }
-/* balise general */
 
+/* Affichez la liste lorsque la case à cocher est cochée */
+input[type="checkbox"]:checked ~ .menu-items {
+    display: flex;
+}
+
+/* balise general */
 body{
-background-color: black;
-color: white;
-overflow-x: hidden;
-padding: 0;
-margin: 0;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 a{
-text-decoration: none;
+    text-decoration: none;
 }
 
-
 /* classes */
-
 .image-de-fond{
-position: fixed;
-z-index: -9;
-height: 100%;
-width: 100%;
-opacity: 0.5;
+    position: fixed;
+    z-index: -9;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
 }
 
 .entete{
-background-color: gray;
-border: 1px solid #ccc;
-padding: 1% 15%;
-text-align: justify;
-width: 100%;
-box-sizing: border-box;
+    background-color: gray;
+    border: 1px solid #ccc;
+    padding: 1% 15%;
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
     font-size: 16px;
 }
 
@@ -250,23 +316,12 @@ button:hover::before {
 }
     
 @media (max-width:720px){
-    .navbar {
-        padding-left: 5%;
-    }
-    .navbar a {
-        font-size: 14px;
-        padding: 10px;
-    }
     .search-container input[type="image"] {
         height: 20px;
         padding: 10px;
     }
     .search-container input[type="text"] {
         font-size: 14px;
-        padding: 10px;
-    }
-    .menu-icon {
-        font-size: 20px;
         padding: 10px;
     }
     .button {
@@ -291,23 +346,12 @@ button:hover::before {
 }
 @media (min-width: 721px) and (max-width: 1024px) {
     /* Adjust styles for medium screens */
-    .navbar {
-        padding-left: 7%;
-    }
-    .navbar a {
-        font-size: 15px;
-        padding: 12px;
-    }
     .search-container input[type="image"] {
         height: 22px;
         padding: 12px;
     }
     .search-container input[type="text"] {
         font-size: 15px;
-        padding: 12px;
-    }
-    .menu-icon {
-        font-size: 22px;
         padding: 12px;
     }
     .button {
@@ -332,13 +376,6 @@ button:hover::before {
 
 @media (min-width: 1025px) {
     /* Adjust styles for large screens */
-    .navbar {
-        padding-left: 10%;
-    }
-    .navbar a {
-        font-size: 16px;
-        padding: 14px;
-    }
     .search-container input[type="image"] {
         height: 24px;
         padding: 14px;
@@ -346,10 +383,6 @@ button:hover::before {
     .search-container input[type="text"] {
         font-size: 17px;
         padding: 14px;
-    }
-    .menu-icon {
-        font-size: 24px;
-        padding: 14px 20px;
     }
     .button {
         font-size: 15px;

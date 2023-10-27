@@ -14,33 +14,39 @@
 
     <img src="img/indexbackground.jpg" alt="image de fond" class="image-de-fond">
 
+    <a href="index.html" ><img src="img/produit/Hogwarts_image.png" alt="panier" id="logo-barre-nav" ></a>
 
-
-
-    <!-- NAV -->
-
-    <div class="navbar">
-        <a href="pages/index.html"></a>L'Atelier Magique</a>
-        <a href="pages/shop.html">Boutique</a>
-        <a href="pages/produit.html">Produits</a>
-        <a href="#">À propos</a>
+    <!-----------------BARRE DE NAVIGATION-------------->
+    
+      <div class="navbar">
+    
+        <div class="categorie-gauche-nav-bar">
+          <a href="pages/shop.html">BOUTIQUE</a>
+          <a href="#">HISTOIRE</a>
+          <a href="#">À PROPOS</a>
+        </div>
+    
         <div class="search-container">
-            <input type="image" src="img/loupe.png">
-            <input type="text" placeholder="Rechercher...">
+            <input id="loupe" type="image" src="img/produit/loupe.png">
+            <input id="searchBox" type="text" placeholder="Rechercher...">
         </div>
-        <div class="menu">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul class="menu-items">
-                <li><a href="pages/index.html">L'Atelier Magique</a></li>
-                <li><a href="pages/shop.html">Boutique</a></li>
-                <li><a href="pages/produit.html">Histoire</a></li>
-                <li><a href="#">À propos</a></li>
-            </ul>
+    
+        <a href="#" class="img-panier-a"><img src="img/produit/chaudron-de-sorciere.png" alt="panier" class="img-panier" ></a>
+        <a id="seConnecter" href="#">CONNEXION</a>
         </div>
-
-        <a href="pages/panier.html" class="img-panier-a"><img src="img/panier.png" alt="panier" class="img-panier" ></a>
-        <a href="#" class="login-button">Se connecter</a>
+    </div>
+    
+    <!-----------------BARRE DE NAVIGATION TELEPHONE-------------->
+    
+    <div class="menu">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu-items">
+          <li><a href="index.html">L'Atelier Magique</a></li>
+          <li><a href="pages/shop.html">BOUTIQUE</a></li>
+          <li><a href="#">HISTOIRE</a></li>
+          <li><a href="#">À PROPOS</a></li>
+      </ul>
     </div>
 
     <script src="js/index.js"></script>
