@@ -139,6 +139,14 @@ input[type="checkbox"]:checked ~ .menu-items {
     display: flex;
 }
 }
+
+#logo-barre-nav {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    margin-left: 90px;
+    margin-top: 20px;
+}
 /* FOOTER ============================================================*/ 
 
 .footer{
