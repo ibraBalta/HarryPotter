@@ -230,9 +230,11 @@ body {
 
 p{
     color:white;
+    text-decoration:none;
 }
 h1{
     color:white;
+    text-decoration:none;
 }
 @media (min-width:720px){
 
