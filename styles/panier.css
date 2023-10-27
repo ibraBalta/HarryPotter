@@ -10,14 +10,14 @@
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     padding-left: 10%;
     border-bottom: white 1px solid;
     z-index: 10000;
     position:sticky;
 }
 .page-active{
-   background-color: #ddd;
+    border-top: rgb(235, 216, 0) 5px solid;
 }
 
 .navbar a {
@@ -186,7 +186,13 @@ input[type="checkbox"]:checked ~ .menu-items {
 
 
 
+html{
+    overflow-x: hidden;
+}
 
+.espace{
+    margin-bottom: 20%;
+}
 .image-de-fond{
     
     background-size: cover;
@@ -195,79 +201,43 @@ input[type="checkbox"]:checked ~ .menu-items {
     z-index: -99999;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4)
+    opacity: 0.3;
     
-    
-
 }
 body {
 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #000;
     overflow-x: hidden;
-    
 }
 @media (min-width:720px){
+
+
 .box1 {
-    background-color: #333;
+    background-color:lavender ;
     position: relative;
-    border-left: white 1px solid;
-    border-top: white 1px solid;
-    border-right: white 1px solid;
-    border-bottom: white 1px solid;
+    border-left: black 2px solid;
+    border-top: black 2px solid;
+    border-right: black 2px solid;
+    border-bottom: black 2px solid;
     border-radius: 10px;
     padding: 30px;
     padding-left: 10px;
     text-align: center;
     width: 500px;
     margin-top: 5%;
-    margin-left: 10%;
-    margin-bottom: 10%;
-    
-}
-
-.box2{
-    background-color: darkgrey;
-    font-size: 28px;
-    position: relative;
-    border-left: white 1px solid;
-    border-top: white 1px solid;
-    border-right: white 1px solid;
-    border-bottom: white 1px solid;
-    border-radius: 10px;
-    padding: 30px;
-    padding-left: 10px;
-    text-align: center;
-    width: 500px;
-    margin-top: 5%;
-    margin-left: 46%;
-    margin-bottom: 10%;
-}
-
-.box3 {
-    background-color: #333;
-    position: relative;
-    border-left: white 1px solid;
-    border-top: white 1px solid;
-    border-right: white 1px solid;
-    border-bottom: white 1px solid;
-    border-radius: 10px;
-    padding: 30px;
-    padding-left: 10px;
-    text-align: center;
-    width: 500px;
-    margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 18%;
     margin-bottom: 10%;
     
 }
 
 .box4{
    
-        background-color: darkgrey;
+        background-color:lightgray;
         font-size: 28px;
-        position: relative;
+        position:absolute;
         border-left: white 1px solid;
         border-top: white 1px solid;
         border-right: white 1px solid;
@@ -277,9 +247,10 @@ body {
         padding-left: 10px;
         text-align: center;
         width: 500px;
-        margin-top: 5%;
-        margin-left: 35%;
-        margin-bottom: 10%;
+        margin-top: -25%;
+        margin-left: 60%;
+        
+        
     
 }
 
@@ -329,74 +300,44 @@ h1{
     cursor: pointer;
 }
 }
+
+.search-container1 input[type="image"] {
+    height: 24px;
+    padding: 14px;
+}
+
+.search-container1 input[type="text"] {
+    font-size: 17px;
+    padding: 14px;
+}
 @media (max-width:720px){
 
     .box1 {
-        background-color: #333;
+        background-color:lavender ;
         position: relative;
-        border-left: white 1px solid;
-        border-top: white 1px solid;
-        border-right: white 1px solid;
-        border-bottom: white 1px solid;
+        border-left: black 2px solid;
+        border-top: black 2px solid;
+        border-right: black 2px solid;
+        border-bottom: black 2px solid;
         border-radius: 10px;
         padding: 30px;
         padding-left: 10px;
         text-align: center;
-        
         margin-top: 5%;
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 10%;
         
     }
-    
-    .box2{
-        background-color: darkgrey;
-        font-size: 28px;
-        position: relative;
-        border-left: white 1px solid;
-        border-top: white 1px solid;
-        border-right: white 1px solid;
-        border-bottom: white 1px solid;
-        border-radius: 10px;
-        padding: 30px;
-        padding-left: 10px;
-        text-align: center;
-      
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 10%;
-    }
-    
-    .box3 {
-        background-color: #333;
-        position: relative;
-        border-left: white 1px solid;
-        border-top: white 1px solid;
-        border-right: white 1px solid;
-        border-bottom: white 1px solid;
-        border-radius: 10px;
-        padding: 30px;
-        padding-left: 10px;
-        text-align: center;
-    
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 10%;
-        
-    }
-    
     .box4{
        
-            background-color: darkgrey;
-            font-size: 28px;
-            position: relative;
-            border-left: white 1px solid;
-            border-top: white 1px solid;
-            border-right: white 1px solid;
-            border-bottom: white 1px solid;
+        background-color:lightgray;
+        font-size: 28px;
+        position:relative;
+        border-left: white 1px solid;
+        border-top: white 1px solid;
+        border-right: white 1px solid;
+        border-bottom: white 1px solid;
             border-radius: 10px;
             padding: 30px;
             padding-left: 10px;
@@ -405,6 +346,7 @@ h1{
             margin-left: 10%;
             margin-right: 10%;
             margin-bottom: 10%;
+        
         
     }
 
@@ -455,3 +397,4 @@ h1{
         cursor: pointer;
     }
 }
+
