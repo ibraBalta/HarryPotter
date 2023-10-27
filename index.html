@@ -10,37 +10,65 @@
 </head>
 <body>
 
-<!-- FOND-->
+    <!-- FOND-->
 
-<img src="../img/indexbackground.jpg" alt="image de fond" class="image-de-fond">
+    <img src="../img/indexbackground.jpg" alt="image de fond" class="image-de-fond">
 
 
 
-<!-- NAV -->
+    <!-- NAV -->
 
-<div class="navbar">
-    <a href="../pages/home.html">L'Atelier Magique</a>
-    <a href="../pages/shop.html">Boutique</a>
-    <a href="../pages/produit.html">Produits</a>
-    <a href="#">À propos</a>
-    <div class="search-container">
-        <input type="image" src="../img/loupe.png">
-        <input type="text" placeholder="Rechercher...">
+    <div class="navbar">
+        <a href="../pages/home.html">L'Atelier Magique</a>
+        <a href="../pages/shop.html">Boutique</a>
+        <a href="../pages/produit.html">Produits</a>
+        <a href="#">À propos</a>
+        <div class="search-container">
+            <input type="image" src="../img/loupe.png">
+            <input type="text" placeholder="Rechercher...">
 
+        </div>
+        <a href="#" class="img-panier-a"><img src="../img/panier.png" alt="panier" class="img-panier" ></a>
+        <a href="#" class="login-button">Se connecter</a>
     </div>
-    <a href="#" class="img-panier-a"><img src="../img/panier.png" alt="panier" class="img-panier" ></a>
-    <a href="#" class="login-button">Se connecter</a>
-</div>
+    <div class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-items">
+            <li><a href="#">L'Atelier Magique</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">À propos</a></li>
+        </ul>
+    </div>
 
-<script src="../js/index.js"></script>
+    <script src="../js/index.js"></script>
 
-<!-- CONTENU -->
+    <!-- CONTENU -->
 
-<img src="../img/Hogwarts_image.png" alt="Hogwarts image" class="imgHogwarts">
+    <img src="../img/Hogwarts_image.png" alt="Hogwarts image" class="imgHogwarts">
 
-<button class="button" id="shop-button">Voir la boutique</button>
+    <button class="button" id="shop-button">Voir la boutique</button>
 
-
+    <footer>
+        <div class="footer">
+            <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        
+            <div class="row">
+            <ul>
+                <li><a href="#">Nous Contacter</a></li>
+                <li><a href="#">Nos Services</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
+                <li><a href="#">Termes et Conditions</a></li>
+            </ul>
+            </div>
+        </div>
+    </footer>
 
 
 </body>

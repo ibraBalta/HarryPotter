@@ -1,7 +1,7 @@
-/* navbar */
+/* navbar ======================================================================================================================================== */
 
 .navbar {
-    background-color: #333;
+    background-color: rgb(100, 0, 0);
     display: flex;
     top: 0;
     left: 0;
@@ -9,6 +9,9 @@
     padding-left: 10%;
     border-bottom: white 1px solid;
     z-index: 10000;
+}
+.page-active{
+    border-top: rgb(235, 216, 0) 5px solid;
 }
 
 .navbar a {
@@ -51,122 +54,58 @@
 }
 
 
-.login-button {
+
+
+/* Styles pour le menu hamburger (masqué par défaut) */
+.menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
     background-color: #333;
-    border: none;
+    padding: 10px;
+}
+
+
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
     color: white;
-    padding: 14px 16px;
-    text-align: center;
+    padding: 10px 20px;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+.menu-items a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    color: white;
 }
 
-.login-button:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* burger menu */
-
-.burger {
+.menu-items label {
     display: none;
     cursor: pointer;
 }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
+.menu input[type="checkbox"] {
+    display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar a {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .search-container {
-        float: none;
-    }
-
-    .search-container input[type="image"] {
-        float: none;
-        display: block;
-        margin: auto;
-    }
-
-    .search-container input[type="text"] {
-        float: none;
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-
-    .img-panier-a {
-        margin-left: 0;
-    }
-
-    .burger:hover div {
-        background-color: #ddd;
-    }
-
-    .burger.active div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger.active div:nth-child(3) {
-        transform: rotate(45deg);
-    }
-
-    .burger.active div:nth-child(1) {
-        transform: rotate(-45deg);
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #333;
-        z-index: 9999;
-    }
-
-    .menu.active a {
-        display: block;
-        font-size: 20px;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-
-    .menu.active a:hover {
-        background-color: #ddd;
-        color: black;
-    }
+/* Masquez la liste par défaut */
+.menu-items {
+    display: none;
 }
-
 /* balise general */
 
 body{
@@ -179,6 +118,7 @@ body{
 a{
     text-decoration: none;
 }
+
 
 /* classes */
 
@@ -262,4 +202,61 @@ button::before {
   
 button:hover::before {
     width: 250%;
+}
+
+/* FOOTER ============================================================*/ 
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    position: relative;
+}
+    
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+    
+.footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+}
+    
+.footer .row a:hover{
+    color:#fff;
+}
+    
+.footer .row ul{
+    width:100%;
+}
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+    
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+}
+    
+@media (max-width:720px){
+    .footer{
+        text-align:left;
+        padding:5%;
+    }
+    .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+    }
+    .footer .row a i{
+        margin:0% 3%;
+    }
 }
