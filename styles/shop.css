@@ -365,11 +365,11 @@ a{
 .filtre h2{
     margin: 10px 5px 30px 5px;
     text-align: center;
-    border-bottom: rgb(235, 216, 0) 1px solid;
     display: inline-block;
 }
 .filtre h3{
     margin: 10px 5px 30px 5px;
+    padding-bottom: 20px;
     border-bottom: rgb(100, 0, 0) 2px solid;
     display: inline-block;
 
