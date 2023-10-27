@@ -370,3 +370,7 @@ button:hover::before {
         top: 60%;
     }
 }
+
+.button a {
+    color: black;
+}
