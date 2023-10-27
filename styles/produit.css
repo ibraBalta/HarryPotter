@@ -1,4 +1,19 @@
-/* navbar */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+    background: url(../img/produit/fond.jpg);
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------BARRE DE NAVIGATION  -------------------- */
 
 .navbar {
     background-color: rgb(80, 0, 0);
@@ -6,14 +21,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-left: 10%;
+    padding-left: 0%;
     z-index: 10000;
     font-family: 'Lato', sans-serif;;
     align-items: center;
     justify-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
 .page-active{
     background-color:rgb(60, 0, 0) ;
+}
+
+.categorie-gauche-nav-bar {
+    margin-left: 20%;
 }
 
 .navbar a {
@@ -53,67 +75,324 @@
 }
 
 #logo-barre-nav {
+    position: absolute;
     height: 30px;
     width: auto;
-    margin-right: 50px;
-}
-
-#seConnecter {
-    margin-right: 30px;
+    margin-left: 90px;
+    margin-top: 20px;
 }
 
 .img-panier-a{
-   margin-left: 30%;
+   margin-left: 25%;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
+/* -------------------------------- */
 
 #produit {
-    margin-top: 15%;
+    margin-top: 8%;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    
 }
 
-#exempleProduit {
-    position: absolute;
-    height: 500px;
-    width: auto;
-    border-radius: 15px;
+#partieAchat {
+    margin-left: 5%;
+    background: rgb(0, 0, 0, .7);
+    padding: 30px;
+    border-radius: 10%;
+    border: 5px solid #141414;
+}
+
+#partieImage {
     margin-left: 20%;
 }
 
-.exempleChoix {
-    height: 80px;
-    border-radius: 8px;
-    margin-top: 11%;
-    margin-left: 0.5%;
+/* PARTIE CASE A COCHER */
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(80, 0, 0);
 }
 
-#exempleChoixPremier {
-    margin-left: 52.5%;
+label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 110%;
+    color: #e9e9e9;
+    padding-left: 7px;
+}
+
+/* ---------------------------------------------- */
+
+/* Styles pour le menu hamburger (masqué par défaut) */
+.menu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #202020;
+    padding: 15px;
+}
+
+
+.menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu-items {
+    list-style-type: none;
+    margin-bottom: 3px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+.menu-items a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items label {
+    display: none;
+    cursor: pointer;
+}
+
+.menu input[type="checkbox"] {
+    display: none;
+}
+
+/* Masquez la liste par défaut */
+.menu-items {
+    display: none;
+}
+
+/* Affichez la liste lorsque la case à cocher est cochée */
+input[type="checkbox"]:checked ~ .menu-items {
+    display: flex;
+}
+
+
+/* -------------- RESTE DE LA PAGE  -------------------- */
+
+
+#fondPage {
+    background: url(../img/produit/);
+}
+
+.imagePresentation {
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    border: 5px solid rgb(80, 0, 0);
+}
+
+#imageUn {
+    display: flex;  
+}
+
+#imageDeux {
+    display: none;
+}
+
+#imageTrois {
+    display: none;
+}
+
+#titreDeux {
+    display: none;
+}
+
+#titreTrois {
+    display: none;
+}
+
+#boisNumeroUn {
+    border: 3px solid rgb(80, 0, 0);
+}
+
+#chaudron {
+    filter: invert();
+    padding-left: 15px;
+    max-height: 100%;
+    height: 20px;
+    width: auto;
+}
+
+#coeur {
+    filter: invert();
+    padding-left: 15px;
+    max-height: 100%;
+    height: 20px;
+    width: auto;
+}
+
+
+
+.exempleChoix {
+    height: 80px;
+    width: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 1px solid transparent;
+    transition: filter 0.3s;
+}
+
+.exempleChoix:hover {
+    filter: brightness(120%);
 }
 
 .nomProduit {
-    position: absolute;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    margin-left: 52%;
+    color: #ffffff;
 }
 
 .categorieProduit {
-    position: absolute;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 120%;
-    margin-left: 52%;
-    margin-top: 65px;
+    color: #ffffff;
 }
 
-.prixProduit {
-    position: absolute;
+#prixProduit {
     font-family: 'Roboto', sans-serif;
+    font-size: 150%;
     font-weight: 500;
-    margin-left: 52%;
-    margin-top: 115px;
+    color: #ffffff;
 }
+
+#ajouterAuChaudron {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b1b; 
+    color: #ffffff; 
+    padding: 20px 93px; 
+    border: none; 
+    border-radius: 40px; 
+    cursor: pointer; 
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#ajouterAuChaudron:hover {
+    background-color: #313131;
+}
+
+#ajouterAuxFavoris {
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent; 
+    color: #ffffff; 
+    padding: 20px 95px; 
+    border: gray solid 2px; 
+    border-radius: 40px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+#ajouterAuxFavoris:hover {
+    border: #ffffff solid 2px;
+}
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+
+@media (max-width: 768px) {
+
+    html {
+        background: #313131;
+    }
+
+    #produit {
+        display: block;
+    }
+
+    #partieAchat {
+        position: relative;
+        margin-right: 5%;
+        margin-top: 50px;
+        padding-top: 2%;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .menu {
+        display: block; 
+    }
+
+}
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+
+
 
