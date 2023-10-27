@@ -227,6 +227,13 @@ body {
     background-color: #000;
     overflow-x: hidden;
 }
+
+p{
+    color:white;
+}
+h1{
+    color:white;
+}
 @media (min-width:720px){
 
     p{
