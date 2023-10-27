@@ -6,18 +6,19 @@
     display: none;
 }
 .navbar {
-    background-color: rgb(100, 0, 0);
+    background-color: rgb(80, 0, 0);
     display: flex;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     padding-left: 10%;
-    border-bottom: white 1px solid;
     z-index: 10000;
-    position:sticky;
+    font-family: 'Lato', sans-serif;;
+    align-items: center;
+    justify-items: center;
 }
 .page-active{
-    border-top: rgb(235, 216, 0) 5px solid;
+    background-color:rgb(60, 0, 0) ;
 }
 
 .navbar a {
@@ -30,12 +31,14 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(60, 0, 0);
 }
 
-.search-container {
-    float: left;
+#searchBox {
+    border-radius: .7rem;
+    padding: 10px;
+    margin: 3px;
+    font-size: 17px;
 }
 
 .search-container input[type="image"] {
@@ -44,39 +47,41 @@
     padding: 14px;
 }
 
-.search-container input[type="text"] {
-    font-size: 17px;
-    float: left;
-    padding: 14px;
-}
-
 
 .img-panier {
-    color: white;
-    height: 20px;
+    filter: invert();
+    height: 26px;
 }
+
+#loupe {
+    filter: invert();
+}
+
+#logo-barre-nav {
+    height: 30px;
+    width: auto;
+    margin-right: 50px;
+}
+
+#seConnecter {
+    margin-right: 30px;
+}
+
 .img-panier-a{
    margin-left: 30%;
 }
 
 
-}
+
 
 /* Styles pour le menu hamburger (masqué par défaut) */
-@media (max-width:720px){
-.navbar{
-    display: none;
-}
-
 .menu {
-    display: flex;
+    display: none;
     position: relative;
     top: 0;
     left: 0;
     background-color: #333;
     padding: 10px;
-    position:sticky;
-    z-index: 100000;
 }
 
 
@@ -123,7 +128,6 @@
 /* Affichez la liste lorsque la case à cocher est cochée */
 input[type="checkbox"]:checked ~ .menu-items {
     display: flex;
-}
 }
 
 
@@ -183,6 +187,9 @@ input[type="checkbox"]:checked ~ .menu-items {
     margin:0% 3%;
     }
     }
+
+
+
 
 
 
