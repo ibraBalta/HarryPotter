@@ -1,3 +1,5 @@
+/* FONCTION POUR CHANGER LES IMAGES DES BAGUETTES DE LA PAGE BAGUETTE  */
+
 function changementVersImageUn() {
 
     var imageUn = document.getElementById("imageUn");
