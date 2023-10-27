@@ -10,6 +10,11 @@ Page Boutique : BALTA Ibrahim <br>
 Page Présentation d'un produit : VUILLIN Thomas <br>
 Page Panier : VOELIN Mattéo <br>
 
+Footer : réalisée par Thomas
+Barre de navigation : réalisée par Ibrahim et Thomas, mais l'application de cette dernière sur les pages est propre à chaque membre.
+Illustrations des produits : fait par Thomas avec le logiciel Photoshop
+
+
 ## Indications :
 
 La <b>page panier</b> peut se trouver au niveau de l'icône du chaudron, dans la barre de navigation.
