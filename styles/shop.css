@@ -561,7 +561,8 @@ select:hover{
     }
 
     .charger-plus{
-        margin: 0;
+        margin-bottom: 40%;
+        margin-left: 0;
     }
 
 
