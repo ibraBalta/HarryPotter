@@ -4,7 +4,7 @@ Ce site web a été réalisé dans le cadre d'un mini-projet en BUT Informatique
 
  <br>
 Lien : https://ibrabalta.github.io/HarryPotter/
-<br>
+<br> <br>
 
 ## Membres et répartition du travail :
 
