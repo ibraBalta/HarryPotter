@@ -1,7 +1,8 @@
 # Développement Web :  L'Atelier Magique
 
+Ce site web a été réalisé dans le cadre d'un mini-projet en BUT Informatique (semestre 1). L'objectif est de faire un site d'e-commerce, non fonctionnel, mettant en avant la vente de produits fictifs magiques. Chaque partie est réalisée par un étudiant.
 
-Site WEB : https://ibrabalta.github.io/HarryPotter/
+Lien : https://ibrabalta.github.io/HarryPotter/
 
 ## Membres et répartition du travail :
 
